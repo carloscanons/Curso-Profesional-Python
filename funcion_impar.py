@@ -9,13 +9,14 @@ def is_impar(entero: int):
           if entero%i==0:
               x+=1
        if x>0:
-            return False
+            return "No es primo"
        else:
-            return True
+            return "Es primo"
 
 def run():
-    entero=int(input("Escribe un número: "))
-    is_impar(entero)
+    entero=int(input("¿Qué número quieres saber si es primo? :"))
+    print(is_impar(entero))
+
 
 if __name__ =='__main__':
     run()
